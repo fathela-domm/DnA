@@ -144,7 +144,7 @@ class DailyReadings {
                     this.getReadings(htmlDocument);
                 });
             })
-            .then(res => {
+            .then(async res => {
                 this.updateLocalDailyReadingsDBDaily(this.results);
                 return this.res.status(200).send(this.results);
             })

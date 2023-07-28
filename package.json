@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node -e \"const cmd = process.env.NODE_ENV === 'production' ? 'node ./bin/www' : 'nodemon ./bin/www'; require('child_process').execSync(cmd, { stdio: [0,1,2] });\""
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "axios": "^0.27.2",
